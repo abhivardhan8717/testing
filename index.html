@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Service</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <div id="loginPanel" class="panel">
+            <h2>Customer Login</h2>
+            <label for="loginEmail">Email:</label>
+            <input type="email" id="loginEmail" required>
+            <label for="loginPassword">Password:</label>
+            <input type="password" id="loginPassword" required>
+            <button id="loginButton">Login</button>
+            <button id="registerButton">Register</button>
+        </div>
+
+        <div id="registrationPanel" class="panel hidden">
+            <h2>Customer Registration</h2>
+            <label for="regName">Full Name:</label>
+            <input type="text" id="regName" required>
+            <label for="regEmail">Email:</label>
+            <input type="email" id="regEmail" required>
+            <label for="regPassword">Password:</label>
+            <input type="password" id="regPassword" required>
+            <button id="registerSubmitButton">Register</button>
+            <button id="backToLoginButton">Back to Login</button>
+        </div>
+
+        <div id="driverRegistrationPanel" class="panel hidden">
+            <h2>Driver Registration</h2>
+            <label for="driverEmail">Driver Email:</label>
+            <input type="email" id="driverEmail" required>
+            <label for="driverPassword">Password:</label>
+            <input type="password" id="driverPassword" required>
+            <button id="driverRegisterSubmitButton">Register Driver</button>
+            <button id="backToLoginFromDriverButton">Back to Login</button>
+        </div>
+
+        <div id="emergencyPanel" class="panel hidden">
+            <h2>Emergency Services</h2>
+            <button id="emergencyButton">Notify Emergency Services</button>
+            <button id="emergencyBackButton">Logout</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
